@@ -29,3 +29,34 @@ function celebrate() {
     image.src = "us2.png";
     buttons.style.display = "none";
 }
+function checkPassword() {
+    let answer = prompt("Who is my favourite girl?");
+    
+    // This checks if the answer matches "LOUBNA"
+    // .toUpperCase() makes it work even if she types "loubna" or "Loubna"
+    if (answer && answer.toUpperCase() === "LOUBNA") {
+        alert("Correct! ❤️");
+    } else {
+        alert("Wrong! You aren't my girl! 😂");
+        // This clears the page so they can't see your photos
+        document.body.innerHTML = "<h1 style='text-align:center; margin-top:50px;'>Access Denied</h1>";
+        // Optionally, sends them away to Google
+        window.location.href = "https://www.google.com";
+    }
+}
+
+// This tells the browser to run the function the moment the page opens
+window.onload = checkPassword;
+function checkPassword() {
+    let answer = prompt("Who is my favourite girl?");
+    
+    if (answer && answer.toUpperCase() === "LOUBNA") {
+        // This adds the "authorized" class to show the body
+        document.body.classList.add("authorized");
+    } else {
+        alert("Wrong! You aren't my girl! 😂");
+        window.location.href = "https://www.google.com";
+    }
+}
+
+window.onload = checkPassword;

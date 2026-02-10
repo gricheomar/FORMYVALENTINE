@@ -59,3 +59,12 @@ button {
     /* ... keep your other code ... */
     transition: 0.1s ease; /* This makes the jump look like a quick slide */
 }
+/* This hides everything until the password is correct */
+body {
+    visibility: hidden;
+}
+
+/* This shows everything once the password check is passed */
+body.authorized {
+    visibility: visible;
+}
