@@ -1,0 +1,61 @@
+body {
+    background-color: #ffebee;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    height: 100vh;           /* Makes the body the full height of the screen */
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 250px; 
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+h1 {
+    color: #d32f2f;
+    margin-bottom: 30px; /* Space between text and buttons */
+}
+
+.buttons {
+    display: flex;
+    gap: 20px; /* This creates perfect space between Yes and No */
+    position: relative;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#yesButton {
+    background-color: #4caf50;
+    color: white;
+}
+
+#noButton {
+    background-color: #f44336;
+    color: white;
+    position: absolute; /* This keeps it ready to jump! */
+    left: 100px;        /* Initial position next to Yes */
+}
+#noButton {
+    /* ... keep your other code ... */
+    transition: 0.1s ease; /* This makes the jump look like a quick slide */
+}
