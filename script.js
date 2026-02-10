@@ -54,7 +54,7 @@ function checkPassword() {
         // This adds the "authorized" class to show the body
         document.body.classList.add("authorized");
     } else {
-        alert("Wrong! You aren't my girl! 😂");
+        alert("RAKI SRX????");
         window.location.href = "https://www.google.com";
     }
 }
