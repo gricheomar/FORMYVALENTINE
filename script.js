@@ -37,7 +37,7 @@ function checkPassword() {
     if (answer && answer.toUpperCase() === "LOUBNA") {
         alert("Correct! ❤️");
     } else {
-        alert("Wrong! You aren't my girl! 😂");
+        alert("RAKI SRX???");
         // This clears the page so they can't see your photos
         document.body.innerHTML = "<h1 style='text-align:center; margin-top:50px;'>Access Denied</h1>";
         // Optionally, sends them away to Google
@@ -54,7 +54,7 @@ function checkPassword() {
         // This adds the "authorized" class to show the body
         document.body.classList.add("authorized");
     } else {
-        alert("RAKI SRX????");
+        alert("RAKI SRX???");
         window.location.href = "https://www.google.com";
     }
 }
